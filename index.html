@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
+
+  <!-- JQUERY-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/checkout.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+
+  <title>Enjoei</title>
+</head>
+
+<body>
+  <div class="overlay"></div>
+  <header>
+    <img src="images/enjoei-logo.png" alt="logo-enjoei" title="Logo da enjoei">
+  </header>
+
+  <section class="enjoei-carrinho">
+    <div class="container">
+      <div class="produto-imagem">
+        <img src="https://res-5.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/ckvqkjzfq2pxhusqzvla.jpg" alt="Camiseta adidas feminina com o fundo branco e o logo da marca colorido">
+      </div>
+
+      <div class="enjoei-carrinho-resume">
+        <h3>cupons</h3>
+      <!-- Sem cupom -->
+        <div>
+            <label class="container-radio">
+                <input type="radio" class="marcado" name="marcado[]"  value="0">
+                <span class="checkmark"></span>
+              </label>
+              <div class="resumo-esquerdo2">
+                <span>não usar cupom</span>
+              </div>
+        </div>
+
+      <!-- Com cupom -->
+        <div>
+            
+            <label class="container-radio">
+                  <input type="radio" class="marcado" name="marcado[]"  value="12.00">&nbsp;
+                  <span class="checkmark"></span>
+            </label>
+            <div class="resumo-esquerdo2">
+                <span>black friday</span>
+            </div>
+            <div class="resumo-direito2">
+                <span>- R$12,00</span>
+            </div>
+      </div>
+
+      
+        
+      <!-- Resumo da compra -->
+      <div class="enjoei-carrinho-resume">
+        <h3>resumo</h3>
+        <div>
+          <div class="resumo-esquerdo">
+            <span>valor original</span>
+            <span class="cupom-atv">cupom</span>
+            <span>frete</span>
+            <span>total</span>
+          </div>
+          <div class="resumo-direito">
+            <span id="valorOriginal">R$ 100,00</span>
+            <span id="cupom">- R$12,00</span>
+            <span id="frete">R$ 20,00</span>
+            <span id="total">R$ 120,00</span>
+            <div id="resultado" value="R$ 100.00"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Botões cancelar/confirmar compra -->
+    <div class="checkout-buttons">
+      <button id="modal-cancelar">cancelar</button>
+      <button id="modal-confirmar">confirmar</button>
+    </div>
+  </section>
+
+  <!-- Modal confirma compra -->
+    <div id="modal-confirm" class="modal-container">
+      <div class="modal">
+            <div class="conf-icon">
+                <span id="icon-conf"><i class="fas fa-2x fa-shopping-cart"></i></span>
+            </div>
+            <h3 class="subt-confirm">compra confirmada</h3>
+            <p class="descr-confirm">enviaremos atualizações sobre o pedido para o seu email</p>
+      </div>
+    </div>
+    <!-- Modal cancela compra -->
+    <div id="modal-cancel" class="modal-container">
+      <div class="modal">
+            <div class="cancel-icon">
+                <span id="icon-cancel"><i class="fas fa-2x fa-shopping-cart"></i></span>
+            </div>
+            <h3 class="subt-cancel">compra cancelada</h3>
+            <p class="descr-cancel">o pedido não foi enviado e você não será cobrado</p>
+      </div>
+    </div>
+
+
+
+
+   <!-- JavaScript -->
+  
+  <script src="js/principal.js"></script>
+
+</body>
+
+</html>
